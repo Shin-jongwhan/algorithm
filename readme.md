@@ -13,6 +13,6 @@
 ### 이것도 가장 많이 사용하는 알고리즘 중 하나이다.
 ### <br/><br/><br/>
 
-## suffix / prefix araay
-### 별도로 suffix와 prefix에 대한 정보를 저장해두고 거기서 문자열 매칭을 찾는다.
+## suffix / prefix trie
+### 별도로 suffix와 prefix에 대한 정보인 trie를 저장해두고 거기서 문자열 매칭을 찾는다.
 ### <br/><br/><br/>
