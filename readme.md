@@ -61,4 +61,10 @@
 
 ### 시간복잡도는 무려... query 문자열 길이만큼인 O(m)이다.
 ### 효율적이라고 알려진 다른 알고리즘보다 비교했을 때 굉장히 빠른 것이었구나... 실감이 된다.
+### <br/>
+
+### BWA 논문에서는 이를 이용해서 문자열 매칭을 하는데, query 문자열을 backwarch searching을 한다. 
+### 한 글자씩 읽어서 min_r, max_r을 업데이트 해간다.
+#### ![image](https://github.com/Shin-jongwhan/string_matchong_algorithm/assets/62974484/d460e0d3-ad90-436b-8edb-96c327151fb7)
+
 ### <br/><br/><br/>
