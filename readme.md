@@ -25,7 +25,11 @@
 ### 시간복잡도가 O(n)이다.
 ### <br/>
 
-
+### 그런데 의문이 드는게 query 문자열 길이 만큼, 참조 문자열에서 한 칸씩 n - 1까지 모든 hash 값을 구해야 하는데 어떻게 빠른 걸까?
+### 한 칸씩 이동할 때, 맨 앞에는 빼고, 맨 뒤에 하나 추가하는 것만 변경해서 넣어주면 되서 그렇다.
+### 미리 아스키코드에서 각 문자의 hash 테이블을 만들어두고, 하나씩 문자가 이동할 때마다 앞 문자 hash는 빼고, 맨 뒤 문자 hash는 더해주면 끝인 것이다.
+#### [참고 유튜브](https://youtu.be/kJJQJDsjXc8?si=hNRKGKswlp7aNl6k)
+#### ![image](https://github.com/Shin-jongwhan/string_matchong_algorithm/assets/62974484/b7f13741-cc34-43a4-a9cf-716772b5ac2c)
 ### <br/><br/><br/>
 
 ## suffix / prefix trie
