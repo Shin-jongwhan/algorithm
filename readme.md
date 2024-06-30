@@ -53,4 +53,12 @@
 #### ![image](https://github.com/Shin-jongwhan/string_matchong_algorithm/assets/62974484/82c954f3-229f-4489-b3b8-dd6c4620541a)
 ### <br/>
 
+### BWA에서 하나 중요하게 알고 가야 할 것이 FM-index라는 것이다.
+#### https://en.wikipedia.org/wiki/FM-index#cite_note-3
+### C\[c\], Occ(c, k)라는 값의 테이블을 미리 먼저 구한 다음에 문자열 매칭을 시도하는 것이다. 이는 BWT가 선행되어야 하니 먼저 BWT를 보고 와야 이해할 수 있다.
+#### ![image](https://github.com/Shin-jongwhan/string_matchong_algorithm/assets/62974484/1ace1955-a091-4d4b-a86e-3e5ef756414b)
+### <br/>
 
+### 시간복잡도는 무려... query 문자열 길이만큼인 O(m)이다.
+### 효율적이라고 알려진 다른 알고리즘보다 비교했을 때 굉장히 빠른 것이었구나... 실감이 된다.
+### <br/><br/><br/>
