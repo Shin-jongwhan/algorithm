@@ -1,6 +1,11 @@
 ### 240630
 ## 문자열 매칭 알고리즘
 ### 요즘 문자열 매칭에 대해서 공부를 하고 있다. 문자열 매칭은 같은 걸 찾는 데에 시간복잡도를 최대한 줄이는 방향으로 해야 한다(효율성을 위해).
+### 내가 하고 싶은 건 완벽한 문자열 매칭 이외에도 mismatch, gap을 같이 찾는 것이다. 
+### <br/><br/><br/>
+
+## brute-force search
+### 그냥 무작위로 막 찾는 거다. 예를 들어 비밀번호 자물쇠가 있는데, 0000, 0001 ... 계속 대입해가면서 모든 경우의 수를 찾는 거다.
 ### <br/><br/><br/>
 
 ## KMP 알고리즘
@@ -15,4 +20,8 @@
 
 ## suffix / prefix trie
 ### 별도로 suffix와 prefix에 대한 정보인 trie를 저장해두고 거기서 문자열 매칭을 찾는다.
+#### ![image](https://github.com/Shin-jongwhan/string_matchong_algorithm/assets/62974484/9e453a29-a467-455a-b757-6cf195bdeaaf)
 ### <br/><br/><br/>
+
+## suffix array with BWT (Burrows-Wheeler Transform)
+### BWT output과 prefix trie를 이용하여 미리 참조 문자열에 대해 정보를 만들어두고 사용하는 방법이다.
