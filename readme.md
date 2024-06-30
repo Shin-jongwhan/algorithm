@@ -28,7 +28,7 @@
 ### 그런데 의문이 드는게 query 문자열 길이 만큼, 참조 문자열에서 한 칸씩 n - 1까지 모든 hash 값을 구해야 하는데 어떻게 빠른 걸까?
 ### 한 칸씩 이동할 때, 맨 앞에는 빼고, 맨 뒤에 하나 추가하는 것만 변경해서 넣어주면 되서 그렇다.
 ### 미리 아스키코드에서 각 문자의 hash 테이블을 만들어두고, 하나씩 문자가 이동할 때마다 앞 문자 hash는 빼고, 맨 뒤 문자 hash는 더해주면 끝인 것이다.
-#### [참고 유튜브](https://youtu.be/kJJQJDsjXc8?si=hNRKGKswlp7aNl6k)
+### [참고 유튜브](https://youtu.be/kJJQJDsjXc8?si=hNRKGKswlp7aNl6k)
 #### ![image](https://github.com/Shin-jongwhan/string_matchong_algorithm/assets/62974484/b7f13741-cc34-43a4-a9cf-716772b5ac2c)
 ### <br/><br/><br/>
 
@@ -42,5 +42,15 @@
 ### BWT 논문과 BWA(BWT 알고리즘을 이용하여 alignement 프로그램을 만든 논문) 논문을 읽어보자.
 #### 자세한 내용은 BWT, BWA_240620.pptx를 참고하자. 회사에서 알고리즘을 소개하기 위해 공부해서 만든 자료지만, 공부 자료라 공유해도 상관 없을 것 같아 공유한다.
 ### [BWT, BWA_240620.pptx](https://github.com/Shin-jongwhan/string_matchong_algorithm/blob/main/BWT%2C%20BWA_240620.pptx)
+### 위 ppt에는 다음과 같은 내용이 들어 있다.
+- BWT 알고리즘
+- Entropy, Information theory
+- Move-to-front coding
+- Huffman coding
+- Suffix trie / prefix trie
+- radix sort
+- BWA 알고리즘
 #### ![image](https://github.com/Shin-jongwhan/string_matchong_algorithm/assets/62974484/82c954f3-229f-4489-b3b8-dd6c4620541a)
+### <br/>
+
 
