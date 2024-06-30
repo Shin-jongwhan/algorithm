@@ -30,5 +30,7 @@
 ## suffix array with BWT (Burrows-Wheeler Transform)
 ### BWT output과 prefix trie를 이용하여 미리 참조 문자열에 대해 정보를 만들어두고 사용하는 방법이다.
 ### BWT 논문과 BWA(BWT 알고리즘을 이용하여 alignement 프로그램을 만든 논문) 논문을 읽어보자.
+### 자세한 내용은 BWT, BWA_240620.pptx를 참고하자. 회사에서 알고리즘을 소개하기 위해 공부해서 만든 자료지만, 공부 자료라 공유해도 상관 없을 것 같아 공유한다.
+### [BWT, BWA_240620.pptx](https://github.com/Shin-jongwhan/string_matchong_algorithm/blob/main/BWT%2C%20BWA_240620.pptx)
 #### ![image](https://github.com/Shin-jongwhan/string_matchong_algorithm/assets/62974484/82c954f3-229f-4489-b3b8-dd6c4620541a)
 
