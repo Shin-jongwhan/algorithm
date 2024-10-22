@@ -10,6 +10,8 @@ graph = {
 
 
 def dfs_stack(graph, start):
+	if graph == [] : 
+		return None
 	visited = set()
 	stack = [start]  # 시작 노드를 스택에 넣음
 

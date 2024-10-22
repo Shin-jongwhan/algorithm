@@ -12,6 +12,8 @@ graph = {
 
 # BFS 함수 정의
 def bfs(graph, start):
+    if graph == [] : 
+        return None
     visited = set()  # 방문한 노드를 추적하기 위한 집합
     queue = deque([start])  # 탐색할 노드를 위한 큐
     
