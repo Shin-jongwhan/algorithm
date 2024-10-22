@@ -41,6 +41,7 @@ b = ls.pop(0)    # dq.popleft()
 ### <br/><br/><br/>
 
 ## BFS 구현 방법
+#### 코드는 BFS.py를 참고
 ### 1. 주어진 그래프에서, start 지점이 주어지면 deque(\[start\])를 선언한다. 그리고 방문한 것 노드를 확인하기 위한 visited라는 set()을 선언한다.
 ### 2. while deque : 로 요소가 있는지 계속 체크한다.
 ### 3. 요소를 왼쪽에서 하나 꺼내어 node 변수에 저장한다.
@@ -49,33 +50,3 @@ b = ls.pop(0)    # dq.popleft()
 ### 6. 모두 방문했다면, 더 이상 추가할 것이 없어 while queue가 자연스럽게 빈 상태가 되고 종료가 된다.
 ### 7. visited를 리턴한다.
 ### <br/>
-
-### 코드
-```
-from collections import deque
-
-# 그래프를 인접 리스트로 표현
-graph = {
-    'A': ['B', 'C'],
-    'B': ['A', 'D', 'E'],
-    'C': ['A', 'F'],
-    'D': ['B'],
-    'E': ['B', 'F'],
-    'F': ['C', 'E']
-}
-
-# BFS 함수 정의
-def bfs(graph, start):
-    visited = set()  # 방문한 노드를 추적하기 위한 집합
-    queue = deque([start])  # 탐색할 노드를 위한 큐
-    
-    while queue:
-        node = queue.popleft()  # 큐에서 첫 번째 노드를 추출
-        if node not in visited:
-            print(node, end=" ")  # 방문한 노드를 출력
-            visited.add(node)  # 노드를 방문 처리
-            queue.extend(neighbor for neighbor in graph[node] if neighbor not in visited)
-
-# 'A' 노드부터 BFS 탐색 시작
-bfs(graph, 'A')
-```
